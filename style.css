@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #75726e, #2e2c2e, #1b1d1d);
+    /* background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);  */
+    /* background:linear-gradient(to right, #e7b6ff, #f90010); */
+}
+
+.calculator{
+    border: 1px solid #cccfcf;
+    padding: 20px;  
+    border-radius: 16px;
+    background: transparent;
+    /* background: #000000; */
+    box-shadow: 0px 3px 15px rgba(113, 115,119,0.5) ;
+    
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    padding-left: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84,84,84,0.1) ;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #cccfcf;
+    /* background: transparent; */
+    color: #000000;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.eq-btn{
+    background-color: #ca7d34;
+}
+
+.operator{
+    background-color: #8cb7e9;
+    /* color: aqua; */
+}
+
+.operator:nth-child(1){
+    background-color: rgb(41 185 167);
+}
+.operator:nth-child(2){
+    background-color: rgb(209 171 23);
+}
+
+
+@media screen  and (max-width:910px){
+    .calculator{
+        padding: 0px;
+    }
+   
+  
+}
+@media screen  and (max-width:350px){
+    .calculator{
+        padding: 5px;
+    }
+    button{
+        width: 44px;
+        height: 55px;
+        margin: 5px;
+    }
+    input{
+        width: 200px;
+        border: none;
+        padding: 15px;
+        margin: 5px;
+    }
+}
